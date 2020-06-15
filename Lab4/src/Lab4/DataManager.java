@@ -63,11 +63,11 @@ public class DataManager {
 	}
 
 	public void removeKnots(int fileid) {
-		for (int i=0; i<knot.size(); i++) {
-			if (knot.get(i).getId() == fileid) {
-				knot.get(i).setFile(-1);
+		for(int i=0; i<Block.memory.size(); i++) {
+			if (Block.memory.get(i).getId() == fileId) {
+				Block.memory.get(i).setFile(-1);
 			}
 		}
-		knots.clear();
+		Block.memory.clear();
 	}
 }
