@@ -63,9 +63,9 @@ public class DataManager {
 	}
 
 	public void removeKnots(int fileid) {
-		for ((int i=0; i<knot.size(); i++) {
-			if (knot.getId() == fileid) {
-				knot.setFile(-1);
+		for (int i=0; i<knot.size(); i++) {
+			if (knot.get(i).getId() == fileid) {
+				knot.get(i).setFile(-1);
 			}
 		}
 		knots.clear();
